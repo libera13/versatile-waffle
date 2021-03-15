@@ -1,10 +1,27 @@
 ### Prerequisites
 - Installed postgres. [How to on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04)
-1. Create postgres db versatile
 
-```sudo -u postgres createdb versatile```
+### How to run
+
+1. ```sudo -u postgres createdb versatile```
+
+Creating postgres db versatile
 
 
+
+2. (optional) ```npx mikro-orm migrations:create```
+   
+Do it if src/migrations folder is empty do
+
+
+3. ```yarn watch```
+   
+Compile ts / create dist folder (is necessary for mikro-orm to find migrations in dist folder)
+
+
+4. ```yarn dev```
+
+ŁAŁ your app is now running. I hope so ;)
 
 ###Possible errors and fixes:
 
